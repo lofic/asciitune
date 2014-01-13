@@ -1,0 +1,8 @@
+:Abuild	asciidoc.txt	/*:Abuild*
+:Arev	asciidoc.txt	/*:Arev*
+:Ashow	asciidoc.txt	/*:Ashow*
+:Rev	revision.txt	/*:Rev*
+asciidoc	asciidoc.txt	/*asciidoc*
+asciidoc.txt	asciidoc.txt	/*asciidoc.txt*
+revision	revision.txt	/*revision*
+revision.txt	revision.txt	/*revision.txt*

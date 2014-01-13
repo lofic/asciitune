@@ -1,0 +1,16 @@
+*asciidoc.txt* helpers for editing *asciidoc* files
+
+Author: Louis Coilliot
+
+*:Arev*
+    Create/edit a revision history file for the ascii doc
+    Then, in insert mode, add rev. entries with the snippet re<tab>
+
+*:Abuild*
+    Build the pdf document from the ascii doc
+    :! a2x -a docinfo -fpdf -L --dblatex-opts=" -s ~/.vim/bundle/asciitune/sty/custom.sty" %
+
+*:Ashow*
+    Show the pdf output
+
+vim:tw=78:et:ft=help:norl:

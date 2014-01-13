@@ -1,0 +1,16 @@
+*revision.txt* helps you create/edit the *revision* history for an asciidoc
+
+Author: Louis Coilliot
+
+:Arev
+*:Rev*
+    Create or edit the docinfo.xml revision history file for the current document.
+
+In insert mode in the revision file,
+
+re<tab>
+rentry<tab>
+reventry<tab>
+    create a new revision entry snippet.
+
+vim:tw=78:et:ft=help:norl:
