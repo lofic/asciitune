@@ -28,7 +28,7 @@ command! -bar -range=% Abuild call Abuild()
 
 " Show the pdf output
 function! Ashow()
-  execute '!' . 'evince ' . expand("%:r") . '.pdf'
+  execute '!' . 'evince ' . expand("%:r") . '.pdf &'
 endfunction
 command! -bar -range=% Ashow call Ashow()
 command! -bar -range=% Asee  call Ashow()
