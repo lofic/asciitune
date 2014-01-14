@@ -28,7 +28,7 @@ From the standard asciidoc package.
 
 ## Table of contents with tagbar
 
-Needs some additional information in `~/.ctags` or `%UserProfile%\ctags.cnf :
+Needs some additional information in `~/.ctags` or `%UserProfile%\ctags.cnf` :
 
 ```
 --langdef=asciidoc
