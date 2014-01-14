@@ -39,3 +39,13 @@ Needs some additional information in `~/.ctags` or `%UserProfile%\ctags.cnf` :
 --regex-asciidoc=/^====[ \t]+(.*)/. . . \1/s,Section_L3/
 --regex-asciidoc=/^=====[ \t]+(.*)/. . . . \1/s,Section_L4/
 ```
+
+## Shortcuts
+
+You may want to add this in your `.vimrc` :
+
+```
+nnoremap <leader>r :call Arev()<cr>
+nnoremap <leader>s :call Ashow()<cr>
+nnoremap <leader>b :call Abuild()<cr>
+```
