@@ -22,9 +22,15 @@ command! -bar -range=% Arev call Arev()
 
 " Build the pdf document
 function! Abuild()
-  execute '!' . 'a2x -a docinfo -fpdf -L --dblatex-opts=" -s ~/.vim/bundle/asciitune/sty/custom.sty" ' . bufname("%")
+  execute '!' . 'a2x -a docinfo -fpdf -L --dblatex-opts=" -s ~/.vim/bundle/asciitune/sty/custom.sty" --icons --icons-dir=/usr/share/asciidoc/icons ' . bufname("%")
 endfunction
 command! -bar -range=% Abuild call Abuild()
+
+" Build the pdf document - minimalistic
+function! Amin()
+  execute '!' . 'a2x -a docinfo -fpdf -L --dblatex-opts=" -P doc.layout=\"mainmatter\" -P doc.publisher.show=0 -s ~/.vim/bundle/asciitune/sty/custom.sty" --icons --icons-dir=/usr/share/asciidoc/icons ' . bufname("%")
+endfunction
+command! -bar -range=% Amin call Amin()
 
 " Show the pdf output
 function! Ashow()

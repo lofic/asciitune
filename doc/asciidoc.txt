@@ -10,6 +10,10 @@ Author: Louis Coilliot
     Build the pdf document from the ascii doc
     :! a2x -a docinfo -fpdf -L --dblatex-opts=" -s ~/.vim/bundle/asciitune/sty/custom.sty" %
 
+*:Amin*
+    Build the pdf document from the ascii doc - minimalistic (no cover page, no toc)
+    :! a2x -a docinfo -fpdf -L --dblatex-opts="  -P doc.layout=\"mainmatter\" -P doc.publisher.show=0 -s ~/.vim/bundle/asciitune/sty/custom.sty" %
+
 *:Ashow*
     Show the pdf output
 
