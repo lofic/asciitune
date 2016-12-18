@@ -4,7 +4,9 @@
 
 `:Arev` create/edit a revision history file for the ascii doc
 
-`:Abuild` build the pdf document from he ascii doc
+`:Abuild` build the pdf document from the asciidoc
+
+`:Amin` build the pdf document from the asciidoc (minimalistic : without toc and cover page)
 
 `:Ashow` show the pdf output
 
@@ -48,4 +50,5 @@ You may want to add this in your `.vimrc` :
 nnoremap <leader>r :call Arev()<cr>
 nnoremap <leader>s :call Ashow()<cr>
 nnoremap <leader>b :call Abuild()<cr>
+nnoremap <leader>m :call Amin()<cr>
 ```
